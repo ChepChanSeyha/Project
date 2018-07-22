@@ -1,41 +1,5 @@
-<!DOCTYPE html>
 <html>
 <head>
-<style type="text/css">
-
-div#box1{
- border: 1px solid #ccc;
-    border-radius: 5px;
-position:absolute;
-top:10px;
-left:200px;
-width:560px;
-height:260px;
-
-padding:200px;
-display:none;
-margin: 85px 50px 50px 70px;
-background-image: url(http://2.bp.blogspot.com/-XiqVjbkOIuc/VgjgUDbOJvI/AAAAAAAAAXA/nqeaL8KK0R0/s1600/drree.jpg);
- 
-}
-
-
-
-</style>
-<script>
-window.addEventListener('mouseup',function(event){
-var box = document.getElementById('box1');
-if(event.target!=box&&event.target.parentNode!=box)
-{
-box.style.display='none';
-}
-});
-
-</script>
-
-
-	
-
 	
 	<title>Home</title>
 	<link rel="stylesheet" type="text/css" href="Home.css">
@@ -51,15 +15,7 @@ box.style.display='none';
 			<div class="rightmenu">
 				<ul>
 						<li id="home">Home</li>
-						<div id="box1">
-						
-						<h2>
-						L'ITC is the best institute since 1950s
-						</h2>
-						
-						</div>
-						<li
-						 onclick="document.getElementById('box1').style.display='block'">History</li>
+						<li>History</li>
 						<li>Schedule</li>
 						<li>Profile</li>
 						<li>More</li>
