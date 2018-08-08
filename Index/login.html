@@ -8,35 +8,27 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	<link rel="stylesheet" type="text/css" href="csslogin.css">
-
+    <script src="login.js"></script>
 </head>
 
 <body>
 
 <div class="login-form">
-    <form action="#">
+     <form name="login" onSubmit="check()">
         <h2 class="text-center">Student Attendence</h2>       
         <div class="form-group">
+
             <input name ="id" type="text" class="form-control" placeholder="Username"><br>
             <input name ="pass" type="password" class="form-control" placeholder="Password"><br>
-            <input type="button" class="btn btn-primary btn-block" onClick="pasuser(this.form)" value="Log in">
+            <input type="submit" class="btn btn-primary btn-block" onClick="pasuser(this.form)" value="Log in">
         </div>
         <div class="clearfix">
             <a href="#/examples/actions/confirmation.php" class="pull-right">Forgot Password?</a>
         </div>        
     </form>
 </div>
-<script language="javascript">
-	function pasuser(form) {
-if (form.id.value=="Seyha") { 
-if (form.pass.value=="seyha") {              
-location="Home.html" 
-} else {
-alert("Invalid Password")
-}
-} else {  alert("Invalid UserID")
-}
-}
+
+
 </script>
 </body>
 </html>                                		                            
