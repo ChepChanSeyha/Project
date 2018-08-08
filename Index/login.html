@@ -17,15 +17,26 @@
     <form action="#">
         <h2 class="text-center">Student Attendence</h2>       
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Username"><br>
-            <input type="password" class="form-control" placeholder="Password"><br>
-            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+            <input name ="id" type="text" class="form-control" placeholder="Username"><br>
+            <input name ="pass" type="password" class="form-control" placeholder="Password"><br>
+            <input type="button" class="btn btn-primary btn-block" onClick="pasuser(this.form)" value="Log in">
         </div>
         <div class="clearfix">
             <a href="#/examples/actions/confirmation.php" class="pull-right">Forgot Password?</a>
         </div>        
     </form>
 </div>
-
+<script language="javascript">
+	function pasuser(form) {
+if (form.id.value=="Seyha") { 
+if (form.pass.value=="seyha") {              
+location="Home.html" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+</script>
 </body>
 </html>                                		                            
