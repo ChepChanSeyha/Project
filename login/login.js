@@ -13,3 +13,19 @@ function pasuser() {
 		alert("Invalid UserID")
 	}
 }
+
+function pasuser() {
+	event.preventDefault();
+	var form = document.forms["login"];
+	if (form.id.value=="Sarakorn") { 
+	if (form.pass.value=="Sarakorn") {
+		window.location.href ="hometeacher/Home.html"
+	}
+	else {
+		alert("Invalid Password")
+	}
+	}
+	else {
+		alert("Invalid UserID")
+	}
+}
