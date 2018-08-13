@@ -32,7 +32,7 @@
       </li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="file:///E:/Project_Krou/Project/login.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+      <li><a href="../login.html"><span class="glyphicon glyphicon-log-in"></span> Log out</a></li>
     </ul>
   </div>
 </nav>
@@ -201,7 +201,7 @@
     <div id="profile" class="tab-pane fade">
 		<div class="container">
 		
-		  <img src="..\pictures/pic11.jpg" class="img-thumbnail" alt="Cinque Terre" width="150" height="100"><br>
+		  <img src="../pictures/pic11.jpg" class="img-thumbnail" alt="Cinque Terre" width="150" height="100"><br>
 		  
 				  <h2>Chep Chanseyha</h2>                                            
 				  
@@ -252,12 +252,15 @@
 					<br>
 					<div class="row">
 					<div class="col-sm-6 col-sm-offset-3">
-					<form method="post" id="passwordForm">
-					<input type="password" class="input-lg form-control" name="password1" id="password1" placeholder="New Password" autocomplete="off">
-					<br>
-					<input type="password" class="input-lg form-control" name="password2" id="password2" placeholder="Repeat Password" autocomplete="off">
-					<br>
-					<input type="submit" class="col-xs-12 btn btn-primary btn-load btn-lg" data-loading-text="Changing Password..." value="Change Password">
+					<div class="header"><p style="color: red">Warnning!!!</p><p>If you change your password you will restart to login again! please fill the cullon below</p></div>
+					<form method="post" id="passwordForm" action="../login.html">
+						<input type="password" class="input-lg form-control" name="password" id="password" placeholder="Current Password" autocomplete="off">
+						<br>
+						<input type="password" class="input-lg form-control" name="password1" id="password1" placeholder="New Password" autocomplete="off">
+						<br>
+						<input type="password" class="input-lg form-control" name="password2" id="password2" placeholder="Repeat Password" autocomplete="off">
+						<br>
+						<input type="submit" class="btn" style="text-align: center;" data-loading-text="Changing Password..." value="Enter">
 					</form>
 				</div><!--/col-sm-6-->
 			</div><!--/row-->
