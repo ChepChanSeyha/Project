@@ -1,4 +1,4 @@
-.login-form {
+/*.login-form {
 	width: 340px;
     margin: 50px auto;
 }
@@ -23,27 +23,12 @@
 	margin-left:122px;
 }
 
-<style type="text/css" scoped>
 .scrollspy-example {
     position: relative;
     height: 200px;
     margin-top: .5rem;
     overflow: auto;
 }
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     background-color: #eee;
     padding: 20px;
@@ -97,4 +82,98 @@ input.not-supported {
   text-align: center;
   font-size: 14px;
   padding-top: 120px;
+}
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-size: 120%;
+    background: white;
+}
+
+.header{
+    width: 300px;
+    margin: 10px auto 0px;
+    color: white;
+    background: grey;
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+form{
+    width: 300px;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid grey;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+}
+.input-group input{
+    height: 25px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1px solid gray;
+    margin: 10px 0px 10px 0px;
+}
+.btn{
+    padding: 10px;
+    width: 130px;
+    font-size: 15px;
+    color: white;
+    background:grey;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+    
+}
+#btn{
+    text-align: right;
+}
+#btn: hover{
+    padding: 10px;
+    width: 130px;
+    font-size: 15px;
+    color: green;
+    background:blue;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+}
+.dlabel{
+    font-size: 13px;
+}
+
+/* The Modal (background) */
+.modal {
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 70px;
+  top: 0px;
+  /*width: 70%; full width 
+  height: 60%; Full height
+  overflow: auto; Enable scroll if needed */
+  padding-top: 40px;
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 4px;
+    top: 50px;
+    font-size: 30px;
+     font-weight: bold;
+    color: #f1f1f1;
+}
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
 }
