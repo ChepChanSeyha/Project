@@ -3,7 +3,7 @@ function pasuser() {
 	var form = document.forms["login"];
 	if (form.id.value=="seyha") { 
 	if (form.pass.value=="seyha") {
-		window.location.href ="homestudent/Home.html"
+		window.location.href ="../homestudent/Home.html"
 	}
 	else {
 		alert("Invalid Password")
@@ -11,7 +11,7 @@ function pasuser() {
 	}
 	else if (form.id.value=="sarakorn") { 
 	if (form.pass.value=="sarakorn") {
-		window.location.href ="hometeacher/Home.html"
+		window.location.href ="../hometeacher/Home.html"
 	}
 	else {
 		alert("Invalid Password")
