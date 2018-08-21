@@ -17,7 +17,7 @@ $(document).ready(function(){
 /* QRCode */
 
     jQuery(function(){
-    jQuery('#qrcode').qrcode("http://jetienne.com");
+    jQuery('#qrcode').qrcode("http://news.sabay.com.kh/");
 });
 
 
