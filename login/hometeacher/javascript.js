@@ -15,7 +15,11 @@ $(document).ready(function(){
 
 
 /* QRCode */
+function htmlEncode (value){
+  return $('<div/>').text(value).html();
+}
 
+<<<<<<< HEAD
     jQuery(function(){
     jQuery('#qrcode').qrcode("http://news.sabay.com.kh/");
 });
@@ -60,8 +64,14 @@ $(window).load(function(){
     	alert("Please provide some text or url !");
     }
   	
+=======
+$(function() {
+  $("#generate").click(function() {
+    $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#content").val()) + "&chs=160x160&chld=L|0");
+>>>>>>> 5adc45364da1368d2816a0851ad5c711b9900111
   });
 });
 
 
 
+/* pop up */
