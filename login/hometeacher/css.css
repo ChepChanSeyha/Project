@@ -100,3 +100,44 @@ section > button:hover {
   width:30px;
   height:30px;
 }
+
+#setting{
+  top: 10px;
+  margin: 10px 0px 10px 0px;
+}
+
+.modal {
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  top: 30px;
+  left: 10%;
+  width: 80%; full width 
+  height: 20%; Full height
+  overflow: auto;
+  background: white;
+  padding-top: 40px;
+  border-radius: 20px;
+}
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    /* color: #f1f1f1; */
+    color: black;
+}
+.close:hover,
+.close:focus {
+    /*color: #f44336;*/
+    color: red;
+    cursor: pointer;
+}
+
+#size-image{
+  width: 45%; full width 
+  position: fixed;
+  overflow: auto;
+}
