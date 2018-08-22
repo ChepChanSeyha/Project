@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>Teacher</title>
+  <title>Student Attendence</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,14 +15,14 @@
 </head>
 
 <body>
-<!-- Navigation -->
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
 	<div class="navbar-header">
-      <a class="navbar-brand" href="#page">Home</a>
+      <a class="navbar-brand" href="#home">Student Attendence</a>
     </div>
-      <li class="active"><a href="#home">Student Attendence</a></li>
+      <li class="active"><a href="#home">Home</a></li>
 	  <li><a href="#history">History</a></li>
 	  <li><a href="#schedule">Schedule</a></li>
 	  <li><a href="#profile">Profile</a></li>
@@ -37,92 +37,63 @@
     </ul>
   </div>
 </nav>
-
-<!-- Table start class -->
+  
 <div class="tab-content">
-
-	<div id="page" class="tab-pane fade in active">
-		<div class="site-content">
-      <div class="container">
-        
-        <h1>Institute of Technology of Cambodia</h1>
-        <p>for more information please go to 
-          <a href="https://www.youtube.com/watch?v=_X2N_yw9Boo" target="_blank" style="color: blue">https://www.youtube.com/watch?v=_X2N_yw9Boo</a>
-        </p>
-        <p>We will solve the problem that happened on you 
-          <a href="https://www.google.com/design/spec/style/color.html" target="_blank" style="color: blue">Google Material Design</a>
-        </p>
-        
-        <h2>Departerment</h2>
-        <ul>
-          <li>Civil Ingineering</li>
-          <li>Cimincal Ingineering</li>
-          <li>Information Ingineering</li>
-          <li>Flood Ingineering</li>
-        </ul>
-        
-        <h2 style="display: inline">Hint</h2>
-        <p>Resize the browser window to toggle</p>
-        
-        <h2>Breakfast</h2>
-        <figure>
-          <a href="http://commons.wikimedia.org/wiki/File:Grilled_ham_and_cheese_014.JPG" target="_blank">
-            <img src="http://upload.wikimedia.org/wikipedia/commons/5/50/Grilled_ham_and_cheese_014.JPG" alt="By Glenlarson at English Wikipedia (en.wikipedia) [Public domain], via Wikimedia Commons" style="width: 100%; height: auto;">
-          </a>
-          <figcaption style="font-size: smaller">Breakfast.01 - The picture above has cheese though, mine has no cheese.</figcaption>
-        </figure>
-        <p>
-          I make ham sandwiches in the morning with toasted bread and a cup of fresh milk every weekend.
-        </p>
-        <p>
-          Bacon ipsum dolor sit amet beef kielbasa pancetta sirloin, landjaeger sausage kevin hamburger frankfurter ham.Consequat laborum ham hock culpa pork filet mignon kevin, ribeye leberkas sed tri-tip corned beef ut dolore exercitation.
-        </p>
-        <p>
-          Ground round chicken cow, tongue porchetta sirloin salami kielbasa pork prosciutto venison pork chop capicola.
-        </p>
-        
-      </div> <!-- END container -->
-    </div> <!-- END site-content -->
-	</div>
-
     <div id="home" class="tab-pane fade in active">
+							
 		<div class="header" ><h4>Algorithm</h4></div>
-			<div class="container">
+		<div class="container">
+		  
+
 		  		<form>
 				  <div>
 				      <label for="input-date">Input date</label>
-				      <input id="input-date" type="date" value="00-00-00" class="form-control">
+				      <input id="input-date" type="date" value="00-00-00" class="input-date">
 				  </div>
+
 				  <div>
 				      <label for="input-start-time">Input start time</label>
-				      <input id="input-start-time" type="time" value="00:00:00" class="form-control">
+				      <input id="input-start-time" type="time" value="00:00:00" class="input-date">
 				  </div>
+
 				  <div>
 				      <label for="input-time">Input end time</label>
-				      <input id="input-end-time" type="time" value="00:00:00" class="form-control">
+				      <input id="input-end-time" type="time" value="00:00:00" class="input-date">
 				  </div>
-				    <div class="form-group">
-					    <label style="font-size:16px;color:gray;">Generate:</label>
-						    <div class="col-sm-10">
-						    	<input type="text" style="text-align: center;" class="form-control" id="content" placeholder="Enter code">
-					    </div>
-				    </div>
-                    <button class = "btn" id="generate" onclick="document.getElementById('id01').style.display='block'">Start Class</button>
+				  <br>
+                    <button type="submit" name="login" class="btn" onclick="pasuser(this.form)">Start class</button>
 				</form>
-		</div>
 
 
 <!-- QR code -->
-		<div id="id01" class="modal">
-			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
-		  <div class="text-center">
-		    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0" class="qr-code img-thumbnail img-responsive" id="size-image">
-		  </div>
-		</div>			
+<div class="container-fluid">
+  <div class="text-center">
+    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0" class="qr-code img-thumbnail img-responsive">
+  </div>
+
+  <div class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="content">Content:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="content" placeholder="Enter content">
+      </div>
     </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="button" class="btn btn-default" id="generate">Generate</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<!-- Table Tab to show -->
+
+
+					
+		</div>
+								
+    </div>
+	
     <div id="history" class="tab-pane fade">
 		<div class="container">
 		  
@@ -242,26 +213,33 @@
 				
 		</div>
     </div>
-
-
-<!-- Change Password -->
+	
 	<div id="setting" class="tab-pane fade">
-		<div class="row1">
-			<div class="header">
-				<p style="color: red">Warnning!!!</p>
-				<p>If you change your password you will restart to login again! please fill the cullon below</p>
-			</div>
-			<form method="post" id="passwordForm">
-			<input type="password" class="input-lg form-control" name="password" id="password" placeholder="Current Password" autocomplete="off">
-			<br>
-			<input type="password" class="input-lg form-control" name="password1" id="password1" placeholder="New Password" autocomplete="off">
-			<br>
-			<input type="password" class="input-lg form-control" name="password2" id="password2" placeholder="Repeat Password" autocomplete="off">
-			<br>
-			<input type="submit" class="btn" style="text-align: center;" data-loading-text="Changing Password..." value="Enter">
-		</div>
-		<script>
-			
-		</script>
-	</body>
+		<div class="container">
+		  
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Change Password</h2>
+				</div>
+					</div>
+					<br>
+					<br>
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-3">
+								<div class="header"><p style="color: red">Warnning!!!</p><p>If you change your password you will restart to login again! please fill the cullon below</p></div>
+								<form method="post" id="passwordForm" action="../login.html">
+									<input type="password" class="input-lg form-control" name="password" id="password" placeholder="Current Password" autocomplete="off">
+									<br>
+									<input type="password" class="input-lg form-control" name="password1" id="password1" placeholder="New Password" autocomplete="off">
+									<br>
+									<input type="password" class="input-lg form-control" name="password2" id="password2" placeholder="Repeat Password" autocomplete="off">
+									<br>
+									<input type="submit" class="btn" style="text-align: center;" data-loading-text="Changing Password..." value="Save">
+								</form>
+						</div><!--/col-sm-6-->
+				</div><!--/row-->
+    </div>
+
+
+</body>
 </html>
