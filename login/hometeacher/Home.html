@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>Student Attendence</title>
+  <title>Teacher</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<!-- Navigation -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
@@ -37,7 +37,7 @@
     </ul>
   </div>
 </nav>
-  
+
 <!-- Table start class -->
 <div class="tab-content">
 
@@ -85,45 +85,44 @@
     </div> <!-- END site-content -->
 	</div>
 
-<div id="home" class="tab-pane fade in active">
-	<div class="header" ><h4>Algorithm</h4></div>
-		<div class="container">
-		<form>
-		  <div>
-		      <label for="input-date">Input date</label>
-		      <input id="input-date" type="date" value="00-00-00" class="form-control">
-		  </div>
-		  <div>
-		      <label for="input-start-time">Input start time</label>
-		      <input id="input-start-time" type="time" value="00:00:00" class="form-control">
-		  </div>
-		  <div>
-		      <label for="input-time">Input end time</label>
-		      <input id="input-end-time" type="time" value="00:00:00" class="form-control">
-		  </div>
-		    <div class="form-group">
-			    <label style="font-size:16px;color:gray;">Generate:</label>
-				    <div class="col-sm-10">
-					<input type="text" style="text-align: center;" class="form-control" id="content" placeholder="Enter code">
-			    </div>
-		    </div>
-		<button class = "btn" id="generate" onclick="document.getElementById('id01').style.display='block'">Start Class</button>
-		</form>
-	</div>
+    <div id="home" class="tab-pane fade in active">
+		<div class="header" ><h4>Algorithm</h4></div>
+			<div class="container">
+		  		<form>
+				  <div>
+				      <label for="input-date">Input date</label>
+				      <input id="input-date" type="date" value="00-00-00" class="form-control">
+				  </div>
+				  <div>
+				      <label for="input-start-time">Input start time</label>
+				      <input id="input-start-time" type="time" value="00:00:00" class="form-control">
+				  </div>
+				  <div>
+				      <label for="input-time">Input end time</label>
+				      <input id="input-end-time" type="time" value="00:00:00" class="form-control">
+				  </div>
+				    <div class="form-group">
+					    <label style="font-size:16px;color:gray;">Generate:</label>
+						    <div class="col-sm-10">
+						    	<input type="text" style="text-align: center;" class="form-control" id="content" placeholder="Enter code">
+					    </div>
+				    </div>
+                    <button class = "btn" id="generate" onclick="document.getElementById('id01').style.display='block'">Start Class</button>
+				</form>
+		</div>
 
 
 <!-- QR code -->
-	<div id="id01" class="modal">
-		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
-	  <div class="text-center">
-	    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0" class="qr-code img-thumbnail img-responsive" id="size-image">
-	  </div>
-	</div>			
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
+		  <div class="text-center">
+		    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0" class="qr-code img-thumbnail img-responsive" id="size-image">
+		  </div>
+		</div>			
     </div>
 
 
 <!-- Table Tab to show -->
-	
     <div id="history" class="tab-pane fade">
 		<div class="container">
 		  
@@ -243,7 +242,8 @@
 				
 		</div>
     </div>
-	
+
+
 <!-- Change Password -->
 	<div id="setting" class="tab-pane fade">
 		<div class="row1">
@@ -260,5 +260,8 @@
 			<br>
 			<input type="submit" class="btn" style="text-align: center;" data-loading-text="Changing Password..." value="Enter">
 		</div>
+		<script>
+			
+		</script>
 	</body>
 </html>
