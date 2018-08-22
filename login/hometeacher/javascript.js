@@ -19,7 +19,6 @@ function htmlEncode (value){
   return $('<div/>').text(value).html();
 }
 
-<<<<<<< HEAD
 
     jQuery(function(){
     jQuery('#qrcode').qrcode("http://news.sabay.com.kh/");
@@ -70,14 +69,6 @@ $(function() {
   $("#generate").click(function() {
     $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#content").val()) + "&chs=160x160&chld=L|0");
  });
-=======
-$(function() {
-  $("#generate").click(function() {
-    $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#content").val()) + "&chs=160x160&chld=L|0");
-  });
-});
-
->>>>>>> ce19300ca269391ad42b86ea5a9da522a4e26bb1
 
 });
 
