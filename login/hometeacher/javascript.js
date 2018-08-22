@@ -10,10 +10,6 @@ $(document).ready(function(){
     });
 });
 
-
-
-
-
 /* QRCode */
 function htmlEncode (value){
   return $('<div/>').text(value).html();
@@ -73,5 +69,24 @@ $(function() {
 });
 
 
-
 /* pop up */
+ $(document).ready(function () {
+     $("button").click(function () {
+         $(".pop").fadeIn(300);
+         positionPopup();
+     });
+
+     $(".pop > span, .pop").click(function () {
+         $(".pop").fadeOut(300);
+     });
+ });
+
+   // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
