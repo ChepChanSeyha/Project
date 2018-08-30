@@ -1,6 +1,6 @@
 function pasuser() {
 	event.preventDefault();
-	var form = document.forms['login'];
+	var form = document.forms('login');
 	if (form.id.value=="seyha") { 
 		if (form.pass.value=="seyha") {
 			window.location.href ="homestudent/Home.html";
