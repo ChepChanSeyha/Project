@@ -10,8 +10,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="..\csslogin.css">
   <link rel="stylesheet" type="text/css" href="css.css">
-  <script <script type="text/javascript" src="javascript.js"></script>
+  <script type="text/javascript" src="javascript.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
@@ -75,7 +76,6 @@
       <div class="col-sm-offset-2 col-sm-10">
            <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-1" id="generate">Start Class</button>
 				</form>
-
       </div>
     
   </div>
@@ -128,9 +128,8 @@
 				<th>Class</th>
 				<th>Time</th>
 				<th>Date</th>
-				<th>Present</th>
-				<th>Absent</th>
-				<th>Others</th>
+				<th>Departement</th>
+				<th>Year</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -139,49 +138,54 @@
 				<td>F209</td>
 				<td>1-3 PM</td>
 				<td>15/04/2018</td>
-				<td>Yes</td>
-				<td></td>
-				<td></td>
-			  </tr>
-			  <tr>
-				<td>Database</td>
-				<td>F306</td>
-				<td>3-5 PM</td>
-				<td>05/03/2018</td>
-				<td></td>
-				<td>Yes</td>
-				<td></td>
-			  </tr>
-			  <tr>
-				<td>Theory of Information</td>
-				<td>F404</td>
-				<td>7-9 AM</td>
-				<td>03/03/2018</td>
-				<td>Yes</td>
-				<td></td>
-				<td></td>
-			  </tr>
-			  <tr>
-				<td>Automata</td>
-				<td>F210</td>
-				<td>1-3 PM</td>
-				<td>02/02/2018</td>
-				<td></td>
-				<td>Yes</td>
-				<td></td>
-			  </tr>
-			  <tr>
-				<td>Logic</td>
-				<td>F209</td>
-				<td>9-11 AM</td>
-				<td>01/02/2018</td>
-				<td>yes</td>
-				<td></td>
-				<td></td>
-			  </tr>
+				<td>GIC</td>
+				<td>I3</td>
+				</tr>
 			</tbody>
 			</table>
-		  
+
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Show</button>
+			<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Students scanned</h4>
+        </div>
+        <div class="modal-body">
+          <table class="table table-bordered">
+			<thead>
+			  <tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Time</th>
+				<th>Action</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>e20150060</td>
+				<td>Chep chanseyha</td>
+				<td>1-3 PM</td>
+				<td>
+					<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+												<a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+												<a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+										</td>
+				</tr>
+			</tbody>
+			</table>
+      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+			
 		</div>
 	</div>
 	
