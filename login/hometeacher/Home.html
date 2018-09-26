@@ -112,11 +112,11 @@
 
 
 
-</div>
-</div>
+     </div>
+      </div>
 
 		
-    <div id="history" class="tab-pane fade">
+     <div id="history" class="tab-pane fade">
 		<div class="container">
 		  
 		  <h2>History</h2>                                              
@@ -146,22 +146,32 @@
 
 			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Show</button>
 			<!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+		</div>
+	
+     </div>
+			
+      <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
+        	<div class="row">
           <h4 class="modal-title">Students scanned</h4>
-        </div>
-        <div class="modal-body">
-          <table class="table table-bordered">
+        
+            <div class="col-sm-4">
+                        <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
+                    </div>
+                </div>
+         
+          <div class="modal-body">
+          <table class="table table-bordered" id="mytable">
 			<thead>
 			  <tr>
 				<th>ID</th>
 				<th>Name</th>
 				<th>Time</th>
-				<th>Add<a class="add" title="Done" data-toggle="button"><i class="material-icons">add</i></a></th>
+				<th>actions</th>
 			  </tr>
 			</thead>
 			<tbody>
@@ -184,7 +194,7 @@
 													<a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
 													<a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
 											</td>
-					</tr
+					</tr>
 			</tbody>
 			</table>
       </div>
@@ -193,22 +203,22 @@
         </div>
       </div>
       
-    </div>
-  </div>
+      </div>
+     </div>
 			
 		</div>
-	</div>
+	   
 	
-    <div id="schedule" class="tab-pane fade">
+      <div id="schedule" class="tab-pane fade">
 		<div class="container">
 		
 		  <img src="../pictures/schedule.jpg" class="img-responsive" alt="Cinque Terre" width="2047" height="1032">
 		  
 		</div>
-    </div>
+      </div>
 	
-    <div id="profile" class="tab-pane fade">
-		<div class="container">
+      <div id="profile" class="tab-pane fade">
+	 	<div class="container">
 		
 		  <img src="../pictures/pic11.jpg" class="img-thumbnail" alt="Cinque Terre" width="150" height="100"><br>
 		  
@@ -248,9 +258,9 @@
 			  </div>
 				
 		</div>
-    </div>
+     </div>
 	
-	<div id="setting" class="tab-pane fade">
+	 <div id="setting" class="tab-pane fade">
 		<div class="container">
 		  
 			<div class="row">
@@ -274,8 +284,8 @@
 								</form>
 						</div><!--/col-sm-6-->
 				</div><!--/row-->
-    </div>
-</div>
+           </div>
+        </div>
 
-</body>
+   </body>
 </html>
